@@ -7,15 +7,16 @@ var map;
     });
 
     var script = document.createElement('script');
-    script.src = 'mapdata.geojsonp';
+    script.src = 'data/autodata.geojsonp';
     document.getElementsByTagName('head')[0].appendChild(script);
   }
 
   window.data_callback = function(results) {
     for (var i = 0; i < results.markers.length; i++) {
-      var title = results.markers[i].events.activityDesc;
-      var coords = results.markers[i].events.coordinates;
-      var latLng = new google.maps.LatLng(coords[0],coords[1]);
+      var title = results.markers[i].activityDesc;
+      var lat = results.markers[i].lat;
+      var lng = results.markers[i].lng;
+      var latLng = new google.maps.LatLng(lat,lng);
       var marker = new google.maps.Marker({
         position: latLng,
         map: map,
