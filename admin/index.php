@@ -17,6 +17,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/dataTables.bootstrap.css" rel="stylesheet">
     <link href="/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -82,14 +83,25 @@
     </div>
     <script src="/js/jquery-1.12.0.min.js"></script>
     <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/collapse.js"></script>
+    <script src="/js/moment.min.js"></script>
     <script src="/js/dataTables.bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-                responsive: true
-        });
-    });
+    <script src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                $('.datepicker').datetimepicker({
+                        format: 'YYYY-MM-DD',
+                        showClose: true
+                });
+            });
     </script>
-
+    <script type="text/javascript">
+            $(function () {
+                $('.timepicker').datetimepicker({
+                        format: 'h:mm:00',
+                        showClose: true
+                });
+            });
+    </script>
 </body>
 </html>
