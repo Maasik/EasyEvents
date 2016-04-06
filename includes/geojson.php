@@ -1,5 +1,6 @@
 <?php 
-    include 'includes/database.php';
+    include 'core/dbconnect.php';
+
     $sql = "select * from events";
     $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 
