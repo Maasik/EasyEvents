@@ -70,7 +70,7 @@
                         </div>
                         <div class="panel-body">
                             <span class="btn btn-default btn-file">Browse <input type="file"></span>
-                            <span class="btn btn-default btn-file">Download</span>
+                            <span class="btn btn-default btn-file" id="download-btn">Download</span>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                                     <div class="col-xs-3">
                                           <div class="form-group">
                                               <label for="nameInput">Name*</label>
-                                                <input type="text" class="form-control" id="nameInput" name="nameInput" placeholder="North Lambton">
+                                                <input type="text" class="form-control" id="nameInput" name="nameInput" placeholder="North Lambton Secondary School">
                                               </div>
                                           <div class="form-group">
                                               <div id="locationField">
@@ -113,7 +113,7 @@
                                           </div>
                                           <div class="form-group">
                                             <label for="agesInput">Ages</label>
-                                            <input type="text" class="form-control" id="agesInput" name="agesInput" placeholder="10-12">
+                                            <input type="text" class="form-control" id="agesInput" name="agesInput" placeholder="08-12">
                                           </div>
                                      </div>
                                     <div class="col-xs-2">

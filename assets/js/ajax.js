@@ -44,6 +44,23 @@ $("#newevent").submit(function(e) {
     e.preventDefault();
 });
 
+$("#download-btn").click(function(e) {
+
+    var url = "/includes/download.php";
+    
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#download-btn").serialize(),
+           success: function(data)
+           {
+               alert(data);
+           }
+         });
+        
+    e.preventDefault();
+});
+
 $("#refresh-btn").click(function() {
   loadData();
 });
