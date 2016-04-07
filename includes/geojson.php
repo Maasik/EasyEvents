@@ -10,23 +10,23 @@
         $events[] = $row;
     }
 
-    $filename = realpath( $_SERVER['DOCUMENT_ROOT'] ) . '/data/autodata.geojsonp';
+    $filename = realpath( $_SERVER['DOCUMENT_ROOT'] ) . '/assets/data/autodata.geojsonp';
     $data = "data_callback(" . json_encode(array('markers' => $events)) . ");";
     
     if (is_writable($filename)) {
-        if (!$handle = fopen($filename, 'a')) {
-            echo "Cannot open file ($filename)";
+        if (!$handle = fopen($filename, 'w')) {
+            echo "400";
             exit;
         }
         if (fwrite($handle, $data) === FALSE) {
-            echo "Cannot write to file ($filename)";
+            echo "400";
         exit;
         }
 
-        echo "Success, updated ($filename)";
+        echo "200";
         fclose($handle);
     } else {
-        echo "The file $filename is not writable";
+        echo "400";
     }
 
     mysqli_close($connection);

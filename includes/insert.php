@@ -5,7 +5,7 @@
     $eventID = $_POST['eventidInput'];
     $name = $_POST['nameInput'];
     $type = $_POST['typeInput'];
-    $description = $_POST['descInput'];
+    $address = $_POST['addressInput'];
     $ages = $_POST['agesInput'];
     $lat = $_POST['latInput'];
     $lng = $_POST['lngInput'];
@@ -23,8 +23,15 @@
         if (!$type || $type == "Select") {
             $type = "None";
         }
-        if (!$description) {
-            $description = "None";
+        if (!$address) {
+            $address = "None";
+        }
+        if (!$ages) {
+            $ageMin = 0;
+            $ageMax = 0;
+        } else {
+            $ageMin = substr($ages, 0, 2);  
+            $ageMax = substr($ages, -2, 2);
         }
         if (!$lat) {
             $lat = 0;
@@ -48,7 +55,7 @@
             $day = "None";
         }
                 
-        $sql = "INSERT INTO events (ownerID, eventID, name, type, description,  lat, lng, timeStart, timeEnd, dateStart, dateEnd, day) VALUES ($ownerID, $eventID, '$name', '$type', '$description', $lat, $lng, '$startTime', '$endTime', '$startDate', '$endDate', '$day')";
+        $sql = "INSERT INTO events (ownerID, eventID, name, type, address, ageMin, ageMax, lat, lng, timeStart, timeEnd, dateStart, dateEnd, day) VALUES ($ownerID, $eventID, '$name', '$type', '$address', $ageMin, $ageMax, $lat, $lng, '$startTime', '$endTime', '$startDate', '$endDate', '$day')";
 
         if ($connection->query($sql) === TRUE) {
             echo "200";

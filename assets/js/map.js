@@ -7,7 +7,7 @@ var map;
     });
 
     var script = document.createElement('script');
-    script.src = 'data/autodata.geojsonp';
+    script.src = '/assets/data/autodata.geojsonp';
     document.getElementsByTagName('head')[0].appendChild(script);
   }
 
