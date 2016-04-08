@@ -179,7 +179,7 @@
                         </div>
                         <div class="panel-body">
                             <div class="dataTable_wrapper">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables">
                                     <thead>
                                         <tr>
                                             <th><i class="fa fa-trash fa-fw"></i></th>
@@ -206,15 +206,14 @@
             </div>
         </div>
     </div>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAqZHMjLnK5pFd6pRzz0vpm7eD2OWp2EWc&callback=initialize" async defer></script>
     <script src="/assets/js/googleAPI.js"></script>
     <script src="/assets/js/jquery-1.12.0.min.js"></script>
     <script src="/assets/js/jquery.dataTables.min.js"></script>
     <script src="/assets/js/collapse.js"></script>
     <script src="/assets/js/moment.min.js"></script>
-    <script src="/assets/js/dataTables.bootstrap.min.js"></script>
     <script src="/assets/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="/assets/js/ajax.js"></script>
+    <script src="/assets/js/dataTables.bootstrap.min.js"></script>
     <script src="/assets/js/autofill.js"></script>
+    <script src="/assets/js/ajax.js"></script>
 </body>
 </html>

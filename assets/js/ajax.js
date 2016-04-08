@@ -1,6 +1,6 @@
 // Load Functions
 
-var ajax_load = "<tr class='odd gradeX'><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td></tr>";
+var ajax_load = "<tr class='odd gradeX'><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td><td class='cell-center'><img src='/assets/images/loading.gif'/></td></tr>";
 
 function loadData () {
     $("#events").html(ajax_load).load('/includes/edit.php');
@@ -83,7 +83,7 @@ $(function () {
         showClose: true
     });
     $('.timepicker').datetimepicker({
-        format: 'h:mm:00',
+        format: 'hh:mm:00',
         showClose: true
     });
 });

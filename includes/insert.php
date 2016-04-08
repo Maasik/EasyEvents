@@ -10,9 +10,9 @@
     $lat = $_POST['latInput'];
     $lng = $_POST['lngInput'];
     $startTime = $_POST['starttimeInput'];
-    $endTime = $_POST['starttimeInput'];
+    $endTime = $_POST['endtimeInput'];
     $startDate = $_POST['startdateInput'];
-    $endDate = $_POST['startdateInput'];
+    $endDate = $_POST['enddateInput'];
     $day = $_POST['dayInput'];
     
     if($name) {
