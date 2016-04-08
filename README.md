@@ -1,7 +1,7 @@
 # EasyEvents Map Manager 
 **Currently in Development** 
 
-EasyEvents is an interactive web mapping manager built with PHP, MySQL, and GoogleMap's Javascript.
+EasyEvents is an interactive web mapping manager built with PHP, MySQL, and GoogleMap's Javascript API.
 
 ### Todos
 
