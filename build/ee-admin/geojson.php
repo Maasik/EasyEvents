@@ -10,7 +10,7 @@
         $events[] = $row;
     }
 
-    $filename = realpath( $_SERVER['DOCUMENT_ROOT'] ) . '/assets/data/autodata.geojsonp';
+    $filename = 'assets/data/autodata.geojsonp';
     $data = "data_callback(" . json_encode(array('markers' => $events)) . ");";
     
     if (is_writable($filename)) {

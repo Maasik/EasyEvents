@@ -14,11 +14,11 @@
 
     <title>Admin Panel</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/sb-admin-2.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="assets/css/sb-admin-2.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -206,14 +206,14 @@
             </div>
         </div>
     </div>
-    <script src="/assets/js/googleAPI.js"></script>
-    <script src="/assets/js/jquery-1.12.0.min.js"></script>
-    <script src="/assets/js/jquery.dataTables.min.js"></script>
-    <script src="/assets/js/collapse.js"></script>
-    <script src="/assets/js/moment.min.js"></script>
-    <script src="/assets/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="/assets/js/dataTables.bootstrap.min.js"></script>
-    <script src="/assets/js/autofill.js"></script>
-    <script src="/assets/js/ajax.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqZHMjLnK5pFd6pRzz0vpm7eD2OWp2EWc&libraries=places"></script>
+    <script src="assets/js/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/collapse.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/autofill.js"></script>
+    <script src="assets/js/ajax.js"></script>
 </body>
 </html>
