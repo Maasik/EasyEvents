@@ -2,6 +2,8 @@
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL & ~E_NOTICE);
+
+    include 'includes/core/ee-config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +21,8 @@
     <link href="assets/css/sb-admin-2.css" rel="stylesheet">
     <link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
 </head>
 <body>
     <div id="wrapper">
@@ -209,7 +213,7 @@
             </div>
         </div>
     </div>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAqZHMjLnK5pFd6pRzz0vpm7eD2OWp2EWc&libraries=places"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=<?php echo API_KEY; ?>&libraries=places"></script>
     <script src="assets/js/jquery-1.12.0.min.js"></script>
     <script src="assets/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/collapse.js"></script>
