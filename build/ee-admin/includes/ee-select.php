@@ -1,5 +1,5 @@
 <?php
-    include 'core/dbconnect.php';
+    include 'core/ee-connect.php';
 
     $sql = "SELECT * FROM events WHERE ownerID = 1";
     $result = $connection->query($sql);

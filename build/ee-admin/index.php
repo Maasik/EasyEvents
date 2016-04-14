@@ -52,6 +52,9 @@
                         <li>
                             <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
+                        <li>
+                            <a href="index.php"><i class="fa fa-cogs fa-fw"></i> Settings</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -206,7 +209,7 @@
             </div>
         </div>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqZHMjLnK5pFd6pRzz0vpm7eD2OWp2EWc&libraries=places"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAqZHMjLnK5pFd6pRzz0vpm7eD2OWp2EWc&libraries=places"></script>
     <script src="assets/js/jquery-1.12.0.min.js"></script>
     <script src="assets/js/jquery.dataTables.min.js"></script>
     <script src="assets/js/collapse.js"></script>
@@ -214,6 +217,6 @@
     <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/dataTables.bootstrap.min.js"></script>
     <script src="assets/js/autofill.js"></script>
-    <script src="assets/js/ajax.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

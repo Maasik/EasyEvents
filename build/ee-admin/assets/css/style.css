@@ -13,6 +13,24 @@ body {
 	width: 75%;
     height: 100%;
 }
+
+#header {
+    background: url(../images/nav_bg.png);
+    height: 50px;
+    width: 100%;
+    z-index: 200;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    width: 200px;
+}
+
+/** Admin.css **/
+
 .alertarea {
     width: 800px;
     position: absolute;

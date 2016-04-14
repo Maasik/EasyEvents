@@ -1,4 +1,4 @@
 <?php
-     include 'ee-admin/map.php';
+     include 'ee-admin/includes/ee-home.php';
 ?>
 

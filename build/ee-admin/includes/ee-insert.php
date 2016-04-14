@@ -1,5 +1,5 @@
 <?php
-    include 'core/dbconnect.php';
+    include 'core/ee-connect.php';
     
     $ownerID = 1;
     $eventID = $_POST['eventidInput'];

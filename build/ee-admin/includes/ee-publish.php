@@ -1,5 +1,5 @@
 <?php 
-    include 'core/dbconnect.php';
+    include 'core/ee-connect.php';
 
     $sql = "select * from events";
     $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
@@ -10,7 +10,7 @@
         $events[] = $row;
     }
 
-    $filename = 'assets/data/autodata.geojsonp';
+    $filename = 'data/autodata.geojsonp';
     $data = "data_callback(" . json_encode(array('markers' => $events)) . ");";
     
     if (is_writable($filename)) {
