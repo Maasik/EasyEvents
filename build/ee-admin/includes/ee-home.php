@@ -23,11 +23,9 @@
         </div>
     </div>
     <div id="map-container">
-        <div id="map-controls"><input id="pac-input" class="controls" type="text" placeholder="Enter your start address"></div>
         <div id="map"></div>
     </div>
     <script src="<?php echo EE_DIR; ?>map.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=<?php echo API_KEY; ?>&callback=initialize" async defer></script>
-     <!--<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo API_KEY; ?>&libraries=places"></script>-->
   </body>
 </html>
