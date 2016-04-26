@@ -3,7 +3,7 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL & ~E_NOTICE);
 
-    include 'includes/core/ee-config.php';
+    include 'includes/core/ee-settings.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,8 +21,8 @@
     <link href="assets/css/sb-admin-2.css" rel="stylesheet">
     <link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon1.ico" type="image/x-icon">
-    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="wrapper">
@@ -214,13 +214,13 @@
         </div>
     </div>
     <script src="//maps.googleapis.com/maps/api/js?key=<?php echo API_KEY; ?>&libraries=places"></script>
-    <script src="assets/js/jquery-1.12.0.min.js"></script>
-    <script src="assets/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/collapse.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="assets/js/dataTables.bootstrap.min.js"></script>
-    <script src="assets/js/autofill.js"></script>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/js/collapse.js"></script>
+    <script type="text/javascript" src="assets/js/moment.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/autofill.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

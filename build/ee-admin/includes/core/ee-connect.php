@@ -1,5 +1,5 @@
 <?php
-    include 'ee-config.php';
+    include 'ee-dbconfig.php';
     
     $database_host = DB_HOST;
     $database_user = DB_USER;
